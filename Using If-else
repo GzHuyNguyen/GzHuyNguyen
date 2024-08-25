@@ -1,0 +1,7 @@
+#Mệnh đề if-else ngắn gọn(conditional expressions)
+VD:value_if_true if condition else value_if_false
+#Trong đó:
+*condition là điều kiện bạn muốn kiểm tra.
+*value_if_true là giá trị sẽ được trả về nếu điều kiện là True.
+*value_if_false là giá trị sẽ được trả về nếu điều kiện là False.
+
