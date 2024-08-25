@@ -1,7 +1,19 @@
 #Mệnh đề if-else ngắn gọn(conditional expressions)
 VD:value_if_true if condition else value_if_false
 #Trong đó:
-*condition là điều kiện bạn muốn kiểm tra.
-*value_if_true là giá trị sẽ được trả về nếu điều kiện là True.
-*value_if_false là giá trị sẽ được trả về nếu điều kiện là False.
-
+*condition*- là điều kiện bạn muốn kiểm tra.
+*value_if_true*- là giá trị sẽ được trả về nếu điều kiện là True.
+*value_if_false*- là giá trị sẽ được trả về nếu điều kiện là False.
+---------------------VD BÀI TẬP---------------------
+age=18
+Tuoi="Vi Thanh Nien" if age>= 18 else "Con Nit"
+#Ở đây nếu biến age lớn hơn hoặc = 18 thì sẽ là "Vị Thành Niên" còn ngược lại sẽ là "Con Nít"
+--Bài tập 1--
+Giả sử bạn có một điểm số của học sinh, và bạn muốn xếp loại học sinh đó như sau:
+Nếu điểm số lớn hơn hoặc bằng 8, xếp loại "Giỏi".
+Nếu điểm số lớn hơn hoặc bằng 5, xếp loại "Khá".
+Nếu điểm số nhỏ hơn 5, xếp loại "Yếu".
+                                          - - - -Bài làm- - - -
+Point=int(input("Nhập điểm"))
+DiemHs="giỏi" if Point >= 8 else "Khá" if Point >=5 else "Yếu" 
+print(DiemHs)
