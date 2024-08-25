@@ -1,0 +1,53 @@
+#"phương thức chuỗi(String Method)
+#Trong Python, các phương thức (methods) liên quan đến chuỗi (string) rất đa dạng và hữu ích cho việc xử lý và thao tác dữ liệu dạng văn bản. 
+Dưới đây là một số phương thức phổ biến mà bạn có thể sử dụng với các chuỗi:
+lấy 1 VÍ DỤ đơn giản:
+Name=input("Nhập Tên")
+ketqua=Name.find("n")
+#{find}- ở đây là tìm kí tự có trong biến(VD: Huy sẽ có 0 chữ n, Nguyen sẽ có 1 chữ n)
+----------------------------------------------------------------------------------------------------------------------------------------------
+-[1]- upper và lower(viết thường all)
+*upper*(): Chuyển toàn bộ chuỗi thành chữ in hoa.
+*lower*(): Chuyển toàn bộ chuỗi thành chữ thường.
+(VD2)
+text = "Xin Chao"
+print(text.upper())  # Output: "XIN CHAO"
+print(text.lower())  # Output: "xin chao"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-[2]- split() và join()
+split(): Chia chuỗi thành danh sách các phần tử con dựa trên ký tự phân tách (mặc định là khoảng trắng).
+join(): Kết hợp các phần tử của một danh sách thành một chuỗi, với một ký tự nối giữa các phần tử.
+(VD3)
+text = "Hello World"
+words = text.split()  # Output: ["Hello", "World"]
+print(words)
+----------------------------------------------------------------------------------------------------------------------------------------------
+joined_text = " ".join(words)  # Output: "Hello World"
+print(joined_text)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3] replace ()
+*replace* (): Thay thế tất cả các xuất hiện của một chuỗi con trong chuỗi chính bằng một chuỗi khác.
+(VD4)
+text = "Hello World"
+new_text = text.replace("World", "Python")
+print(new_text)  # Output: "Hello Python"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4] find() và index()
+find(): Trả về vị trí đầu tiên mà chuỗi con được tìm thấy, hoặc -1 nếu không tìm thấy.
+index(): Tương tự như find(), nhưng sẽ gây lỗi nếu chuỗi con không được tìm thấy.
+(VD5)
+text = "Hello World"
+position = text.find("World")  # Output: 6
+print(position)
+
+position_index = text.index("World")  # Output: 6
+print(position_index)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[5] startswith() và endswith()
+startswith(): Kiểm tra xem chuỗi có bắt đầu bằng một chuỗi con nào đó không.
+endswith(): Kiểm tra xem chuỗi có kết thúc bằng một chuỗi con nào đó không.
+(VD6)
+text = "Hello World"
+print(text.startswith("Hello"))  # Output: True
+print(text.endswith("World"))    # Output: True
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||HẾT|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
