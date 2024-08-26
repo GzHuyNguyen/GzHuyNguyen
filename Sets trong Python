@@ -1,0 +1,52 @@
+#Trong Python, sets là một kiểu dữ liệu tương tự như lists, nhưng với một số đặc điểm khác biệt:
+#*[Các phần tử không trùng lặp]:- Mỗi phần tử trong một set là duy nhất. Nếu bạn cố gắng thêm một phần tử đã tồn tại, set sẽ bỏ qua nó.
+#*[Thứ tự không được bảo toàn]:- Không giống như lists, các phần tử trong set không có thứ tự cụ thể. Điều này có nghĩa là bạn không thể truy cập các phần tử trong set bằng chỉ số (index).
+#*[Tốc độ truy cập nhanh]:- Nhờ việc sử dụng bảng băm (hash table), set có thể kiểm tra sự tồn tại của một phần tử nhanh hơn so với list.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+VD1:
+___________________________________________________
+|# Tạo một set rỗng                               |
+|my_set = set()                                   |    
+|# Tạo một set với các phần tử                    |    
+|my_set = {1, 2, 3, 4}                            |
+|# Set tự động loại bỏ phần tử trùng lặp          |
+|my_set = {1, 2, 2, 3, 4}  # Kết quả: {1, 2, 3, 4}|
+|_________________________________________________|
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*Một số thao tác với set*
+[+]Thêm phần tử: Sử dụng phương thức add().
+VD2:
+_______________
+|my_set.add(5)|
+|_____________|
+[+]Xóa phần tử: Sử dụng remove() hoặc discard(). Điểm khác biệt là remove() sẽ báo lỗi nếu phần tử không tồn tại, trong khi discard() không báo lỗi.
+VD3:
+___________________
+|my_set.remove(3) |
+|my_set.discard(2)|
+|_________________|
+[+]Tập hợp con và tập hợp cha:
+_______________________________________________________________
+|set_a = {1, 2, 3}                                            |
+|set_b = {1, 2, 3, 4, 5}                                      |
+|# Kiểm tra xem set_a có phải là tập hợp con của set_b không  |
+|is_subset = set_a.issubset(set_b)  # True                    |
+|_____________________________________________________________|
+[+]Giao, hợp và hiệu:
+_____________________________________________
+|set_a = {1, 2, 3}                          |
+|set_b = {3, 4, 5}                          |  
+|# Giao                                     |
+|intersection = set_a & set_b  # {3}        |
+|# Hợp                                      |
+|union = set_a | set_b  # {1, 2, 3, 4, 5}   |  
+|# Hiệu                                     |
+|difference = set_a - set_b  # {1, 2}       | 
+|___________________________________________|
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{ND: Sets rất hữu ích khi bạn cần xử lý các tập hợp dữ liệu mà không quan tâm đến thứ tự và muốn loại bỏ các phần tử trùng lặp một cách tự động.
+
+
+
+
+
