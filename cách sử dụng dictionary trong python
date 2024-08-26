@@ -1,0 +1,20 @@
+#Trong Python, dictionaries (hay còn gọi là dict) là một kiểu dữ liệu dùng để lưu trữ các cặp key-value (khóa-giá trị). 
+Nó tương tự như một từ điển ngoài đời thực, nơi mà mỗi từ (key) ánh xạ tới một định nghĩa (value).
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/Đặc điểm của dictionaries:\
+[1]Các phần tử không có thứ tự cố định: Từ Python 3.7 trở đi, thứ tự các cặp key-value trong dictionary được bảo toàn theo thứ tự chúng được thêm vào. Tuy nhiên, 
+dictionaries trước đó không có thứ tự cố định.
+[2]Các khóa phải là duy nhất: Mỗi khóa trong một dictionary là duy nhất. Nếu bạn thêm một khóa đã tồn tại, 
+giá trị mới sẽ thay thế giá trị cũ.
+[3]Khóa có thể là bất kỳ kiểu dữ liệu nào không thay đổi: Ví dụ, khóa có thể là chuỗi, số, hoặc tuple. Tuy nhiên, 
+danh sách (list) không thể là khóa vì nó có thể thay đổi (mutable).
+{(==Cách tạo một dictionary==)}
+Bạn có thể tạo một dictionary bằng cách sử dụng dấu ngoặc nhọn {} với các cặp key-value được phân tách bởi dấu hai chấm ":".
+(VD1)
+# Tạo một dictionary rỗng
+my_dict = {}
+# Tạo một dictionary với các phần tử
+my_dict = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"}
