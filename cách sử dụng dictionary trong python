@@ -8,7 +8,8 @@ dictionaries trước đó không có thứ tự cố định.
 giá trị mới sẽ thay thế giá trị cũ.
 [3]Khóa có thể là bất kỳ kiểu dữ liệu nào không thay đổi: Ví dụ, khóa có thể là chuỗi, số, hoặc tuple. Tuy nhiên, 
 danh sách (list) không thể là khóa vì nó có thể thay đổi (mutable).
-{(==Cách tạo một dictionary==)}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*1.Khai báo một dictionary
 Bạn có thể tạo một dictionary bằng cách sử dụng dấu ngoặc nhọn {} với các cặp key-value được phân tách bởi dấu hai chấm ":".
 (VD1)
 # Tạo một dictionary rỗng
@@ -18,3 +19,38 @@ my_dict = {
     "name": "Alice",
     "age": 25,
     "city": "New York"}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*2.Truy cập giá trị trong dictionary
+|Chú ý|:Có thể truy cập giá trị bằng cách sử dụng khóa: print(+dicitonary vừa tạo[+"phần tử"])
+(VD2)
+print(my_dict["name"])  # Output: Alice
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*3. Thêm hoặc cập nhật giá trị
+Bạn có thể thêm hoặc cập nhật một cặp khóa-giá trị trong từ điển:
+*tạo new dictionaryV1, dictionaryV1+["phần tử"] = giá trị
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*4. Xóa một cặp key: value
+Bạn có thể xóa một cặp khóa-giá trị bằng cách sử dụng del hoặc phương thức pop
+*Đây là 2 cách sử dụng để xóa giá trị 
+/B1: sử Dụng del 
+=>del + dict["Phần tử"] |Chú Ý|: phần tử muốn xóa là phần tử đã xuất hiện cái dict đã chọn
+VD:|del my_dict["city"]  # Xóa khóa "city"|
+/B2: sử dụng pop
+=>(tạo biến trc), tên biến=dict.pop("phần tử muốn xóa")
+age = my_dict.pop("age")  # Xóa và trả về giá trị của khóa "age"
+|Chú ý|: sau khi xóa 1 phần tử đã v
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Duyệt qua tất cả cặp khóa-giá trị
+for key, value in my_dict.():
+    print(f"{key}: {value}")
+#Output
+#Key=name: #Value=Alice,
+#Key=age: #Value=25,
+#Key=city: #Value=New York
+
+
+
+
+
+
+
