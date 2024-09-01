@@ -1,0 +1,34 @@
+                                                                                                          *Bài Học: Tạo Chương Trình Đếm Ngược Thời Gian Trong Python*
+[1]Giới Thiệu Về Đếm Ngược Thời Gian
+Đếm ngược thời gian là quá trình hiển thị thời gian giảm dần từ một điểm xác định đến mốc 0.
+Nó thường được sử dụng trong các ứng dụng như báo thức, hẹn giờ nấu ăn, hoặc đếm ngược trước khi bắt đầu một sự kiện
+[2]Công Cụ Cần Thiết
+Để tạo ra một chương trình đếm ngược, chúng ta cần:
+[*]Vòng lặp while: Để lặp lại việc giảm số giây còn lại.
+[*]Thư viện time: Để tạo độ trễ 1 giây giữa mỗi lần cập nhật thời gian.
+[*]Biến số nguyên: Để lưu trữ số giây và giảm dần theo thời gian.
+[3]Viết Chương Trình Đếm Ngược
+|Bước 1|: Nhập Thư Viện time
+Đầu tiên, bạn cần nhập thư viện |time| để sử dụng hàm |sleep()| giúp chương trình chờ 1 giây giữa các lần đếm ngược.
+|Bước 2|: Tạo Hàm countdown(seconds)
+Hàm này sẽ thực hiện đếm ngược từ số giây được cung cấp đến 0.
+VD: bài tập
+______________________________________________________
+|import time                                          |
+|def countdown(seconds):                              |
+|    while seconds > 0:                               |
+|        mins, secs = divmod(seconds, 60)             |
+|        time_format = f'{mins:02d}:{secs:02d}'       |
+|        print(time_format, end='\r')                 |
+|        time.sleep(1)                                |
+|        seconds -= 1                                 |
+|        break                                        |    
+|    print("Time's up!")                              |  
+|# Nhập số giây cần đếm ngược                         |
+|seconds = int(input("Enter the time in seconds: "))  |
+|countdown(seconds)                                   |
+|_____________________________________________________|
+*Giải Thích*
+f'{mins:02d}:{secs:02d}':được sử dụng để định dạng số nguyên (d - decimal) với ít nhất hai chữ số, và thêm số 0 ở phía trước nếu số đó có ít hơn hai chữ số.
+end='\r'
+='\r': Đây là ký tự điều khiển "carriage return". Nó đưa con trỏ về đầu dòng hiện tại mà không xuống dòng mới. Kết quả là dòng hiện tại sẽ được ghi đè bởi nội dung mới.
